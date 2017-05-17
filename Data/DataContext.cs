@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using Core;
 
 namespace Data
@@ -13,9 +14,13 @@ namespace Data
         public DataContext() : base("DataContext")
         {
         }
-        //public DbSet Product { get; set; }
-        //public DbSet Category{ get; set;}
-        public virtual DbSet<Product> Product { get; set; }
-        public virtual DbSet<Category> Category { get; set; }       
+        public DbSet<Product> Product { get; set; }
+        public DbSet<Category> Category { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
+            Database.SetInitializer(new DBInitalize());
+        }
     }
 }

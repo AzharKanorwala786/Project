@@ -14,9 +14,11 @@ namespace Data
         {
             context.Product.Add(new Product { Id = 1, Name = "Galaxy S8",CategoryId = 1 });
 
-            //context.Category.Add(new Category { Id = 1, Name = "Mobiles" });
+            context.Category.Add(new Category { Id = 1, Name = "Mobiles" });
 
             base.Seed(context);
+
+            context.SaveChanges();
         }
     }
 }
