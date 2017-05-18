@@ -4,8 +4,10 @@ using Core.Interfaces;
 using System.Collections;
 using System.Data.Entity;
 using System.Collections.Generic;
+using Core.Models;
+using Data.Data;
 
-namespace Data
+namespace Data.Repositories
 {
     public class ProductRepository : IProductRepository
     {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
-using Core;
+using Core.Models;
 
-namespace Data
+namespace Data.Data
 {
     public class DBInitalize : DropCreateDatabaseIfModelChanges<DataContext>
     {

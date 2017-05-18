@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.Collections;
 
-namespace Core
+namespace Core.Models
 {
     public class Product
     {

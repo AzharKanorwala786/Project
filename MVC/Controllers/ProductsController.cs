@@ -6,8 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using Core;
-using Data;
+using Data.Data;
+using Core.Models;
+
 
 namespace MVC.Controllers
 {

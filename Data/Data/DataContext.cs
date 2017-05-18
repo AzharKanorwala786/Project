@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using Core;
+using Core.Models;
 
-namespace Data
+namespace Data.Data
 {
     public class DataContext : DbContext
     {

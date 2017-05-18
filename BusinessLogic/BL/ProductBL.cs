@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLogic
+namespace BusinessLogic.BL
 {
-    public class Class1
+    class ProductBL
     {
     }
 }

@@ -5,6 +5,8 @@ using Data;
 using System.Data.Entity;
 using System.Data;
 using System.Linq;
+using Data.Data;
+using Data.Repositories;
 
 namespace Test
 {
