@@ -20,7 +20,6 @@ namespace Data.Repositories
 
         private bool disposed = false;
 
-
         // Return Repositories
 
         public IGenericRepository<T> Repository<T>() where T : class
@@ -31,8 +30,6 @@ namespace Data.Repositories
             }
             return repositories[typeof(T)] as IGenericRepository<T>;
         }
-
-
 
         // Cascaded Return Generic Repository
 
