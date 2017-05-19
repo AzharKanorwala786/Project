@@ -15,7 +15,7 @@ namespace Data.Repositories
         // Create Context Object
         private DataContext context = new DataContext();
 
-        //Creating Multiple Repositories
+        // For Creating Multiple Repositories
         private Dictionary<Type, object> repositories = new Dictionary<Type, object>();
 
         private bool disposed = false;
@@ -78,6 +78,7 @@ namespace Data.Repositories
         public void Dispose()
         {
             Dispose(true);
+
             GC.SuppressFinalize(this);
         }
     }
