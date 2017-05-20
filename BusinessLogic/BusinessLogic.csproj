@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="BL\CategoryBL.cs" />
     <Compile Include="BL\ProductBL.cs" />
-    <Compile Include="GenericBL.cs" />
     <Compile Include="Interfaces\IGenericBL.cs" />
     <Compile Include="Interfaces\IProdCategoryBL.cs" />
     <Compile Include="Interfaces\IProductBL.cs" />
